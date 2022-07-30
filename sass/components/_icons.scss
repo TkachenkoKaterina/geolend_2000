@@ -1,0 +1,20 @@
+/* ============= Icons (Fill на иконку при Hovere + Focus) =============*/
+
+.social-link__item:hover,
+.social-link__item:focus {
+	color: #ffffff;
+	background-color: var(--accent-color);
+}
+
+.icon {
+	fill: currentColor;
+}
+
+.item-footer:hover,
+.item-footer:focus {
+	background-color: var(--accent-color);
+}
+
+.icon-footer {
+	fill: currentColor;
+}

@@ -1,0 +1,37 @@
+.section {
+	padding: 60px 0;
+
+	@media screen and (min-width: 1200px) {
+		padding: 94px 0;
+	}
+}
+
+.section__title {
+	font-weight: 700;
+	margin-bottom: 30px;
+	font-size: 28px;
+	line-height: 1.18;
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	color: var(--secondary-color);
+
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 50px;
+		font-size: 36px;
+		line-height: 1.17;
+		text-align: center;
+		letter-spacing: 0.03em;
+	}
+}
+
+.section-bg {
+	background: #f5f4fa;
+}
+
+.section-work {
+	padding-bottom: 94px;
+	@media screen and (max-width: 1199px) {
+		display: none;
+	}
+}

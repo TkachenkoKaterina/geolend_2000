@@ -1,0 +1,128 @@
+/* ============= Portfolio =============*/
+
+.portfolio-titles {
+	border: 1px solid #eeeeee;
+	padding: 0 24px;
+
+	height: 110px;
+
+	@media screen and (max-width: 479px) {
+		width: 100%;
+	}
+
+	@media screen and (min-width: 480px) {
+		width: 450px;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		width: 354px;
+		height: 146px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: 370px;
+	}
+}
+
+.title-portfolio {
+	margin-top: 20px;
+	margin-bottom: 4px;
+
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+
+	color: var(--secondary-color);
+}
+
+.name-portfolio {
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.03em;
+
+	color: var(--dominant-color);
+}
+
+.container-filter {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+
+	@media screen and (min-width: 768px) {
+		justify-content: center;
+	}
+}
+
+.btn-filter--marg {
+	@media screen and (min-width: 480px) and (max-width: 767px) {
+		margin-top: 7px;
+	}
+}
+
+.container-portfolio {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+
+	margin-top: 40px;
+
+	@media screen and (min-width: 768px) {
+		margin-top: 30px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin-top: 50px;
+	}
+
+	& > .list:hover,
+	& > .list:focus {
+		box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+		cursor: pointer;
+	}
+}
+
+.portfolio-overlay {
+	position: relative;
+
+	display: flex;
+
+	overflow: hidden;
+}
+
+.portfolio__img {
+	@media screen and (min-width: 480px) {
+		width: 450px;
+		height: 294px;
+	}
+
+	@media screen and (min-width: 768px) {
+		width: 354px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: 370px;
+	}
+}
+
+.portfolio-text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 63px 24px;
+	width: 100%;
+	height: 100%;
+
+	font-size: 18px;
+	line-height: 1.56;
+	letter-spacing: 0.03em;
+	color: #ffffff;
+	background-color: rgba(33, 150, 243, 0.9);
+
+	transition: transform var(--main-transition);
+	transform: translateY(100%);
+}
+
+.container-portfolio .list:hover .portfolio-text {
+	transform: translateY(0);
+}

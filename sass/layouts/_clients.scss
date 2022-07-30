@@ -1,0 +1,54 @@
+/* ============= Секция Поятоянные клиенты =============*/
+
+.clients {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: center;
+	// align-content: center;
+}
+
+.clients__item {
+	display: flex;
+	align-items: center;
+	background-color: #ffffff;
+	justify-content: center;
+
+	border-radius: 4px;
+	border: 1px solid #afb1b8;
+
+	transition: color var(--main-transition), border-color var(--main-transition);
+	color: #afb1b8;
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+		border-color: var(--accent-color);
+	}
+
+	@media screen and (max-width: 767px) {
+		width: 210px;
+		height: 92px;
+	}
+
+	@media screen and (min-width: 768px) {
+		width: 226px;
+		height: 92px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: 170px;
+		height: 92px;
+	}
+}
+
+// .clients__list:not(:first-child) {
+// 	margin-left: 30px;
+
+// }
+
+.clients__list:hover,
+.clients__list:focus {
+	color: var(--accent-color);
+	border-color: var(--accent-color);
+}

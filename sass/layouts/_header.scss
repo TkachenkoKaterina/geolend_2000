@@ -1,0 +1,105 @@
+/* ============= Header ============= */
+
+.header {
+	position: relative;
+}
+
+.mobile_logo {
+	padding: 16px 0;
+}
+
+.nav-link {
+	display: block;
+	padding: 32px 0;
+
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+
+	color: var(--secondary-color);
+}
+
+.selection {
+	transition: color var(--main-transition);
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
+}
+
+/* ============= nav-contacts ============= */
+
+.contact-link {
+	display: flex;
+
+	align-items: center;
+
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+
+	color: var(--dominant-color);
+
+	@media screen and (min-width: 1200px) {
+		padding: 32px 0;
+		font-size: 14px;
+		line-height: 1.14;
+	}
+}
+
+.icon-marg {
+	margin-right: 10px;
+	fill: currentColor;
+}
+
+.contact-flex {
+	display: flex;
+	padding: 0;
+
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		flex-direction: column;
+		margin-left: 84px;
+		gap: 10px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin: 0 0 0 305px;
+		gap: 30px;
+	}
+}
+
+/* ============= navigation ============= */
+
+.nav-header {
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+
+	@media screen and (min-width: 768px) {
+		margin: 0 0 0 88px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin: 0 0 0 93px;
+	}
+}
+
+.nav-flex {
+	display: flex;
+
+	& .list {
+		margin-right: 50px;
+	}
+
+	& .list:last-child {
+		margin-right: 0;
+	}
+}
