@@ -3,8 +3,8 @@
   --dominant-font: "Roboto";
   --secondary-font: "Raleway";
   --dominant-color: #757575;
-  --secondary-color: #212121;
-  --accent-color: #2196f3;
+  --secondary-color: #2f4858;
+  --accent-color: #0da407;
   --main-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -138,6 +138,7 @@ body {
 
 .section {
   padding: 60px 0;
+  outline: 1px solid blue;
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -182,6 +183,7 @@ body {
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
+  outline: 1px solid tomato;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -311,7 +313,7 @@ a.current-link {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: #000000;
+  color: var(--secondary-color);
 }
 @media screen and (min-width: 1200px) {
   .logo-second {
@@ -870,7 +872,7 @@ a.current-link {
   position: relative;
 }
 
-.mobile_logo {
+.mobile__logo {
   padding: 16px 0;
 }
 
@@ -937,13 +939,13 @@ a.current-link {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: 84px;
+    margin-left: 94px;
     gap: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
   .contact-flex {
-    margin: 0 0 0 305px;
+    margin: 0 0 0 206px;
     gap: 30px;
   }
 }
@@ -956,12 +958,12 @@ a.current-link {
 }
 @media screen and (min-width: 768px) {
   .nav-header {
-    margin: 0 0 0 88px;
+    margin: 0 0 0 42px;
   }
 }
 @media screen and (min-width: 1200px) {
   .nav-header {
-    margin: 0 0 0 93px;
+    margin: 0 0 0 120px;
   }
 }
 
@@ -971,7 +973,12 @@ a.current-link {
   display: flex;
 }
 .nav-flex .list {
-  margin-right: 50px;
+  margin-right: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .nav-flex .list {
+    margin-right: 50px;
+  }
 }
 .nav-flex .list:last-child {
   margin-right: 0;
@@ -998,37 +1005,37 @@ a.current-link {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/Hero-sm.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/Hero-sm.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/david-henrichs-72AYEEBJpz4-unsplash_sm.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/david-henrichs-72AYEEBJpz4-unsplash_sm.jpg);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-bg {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/Hero-sm@2x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/Hero-sm@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/david-henrichs-72AYEEBJpz4-unsplash_sm@2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/david-henrichs-72AYEEBJpz4-unsplash_sm@2.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero-bg {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/Hero-md.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/Hero-md.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/david-henrichs-72AYEEBJpz4-unsplash_md.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/david-henrichs-72AYEEBJpz4-unsplash_md.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-bg {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/Hero-md@2x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/Hero-md@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/david-henrichs-72AYEEBJpz4-unsplash_md@2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/david-henrichs-72AYEEBJpz4-unsplash_md@2.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-bg {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/Hero-lg.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/Hero-lg.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/david-henrichs-72AYEEBJpz4-unsplash_lg.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/david-henrichs-72AYEEBJpz4-unsplash_lg.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-bg {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/Hero-lg@2x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/Hero-lg@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/david-henrichs-72AYEEBJpz4-unsplash_lg@2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/david-henrichs-72AYEEBJpz4-unsplash_lg@2.jpg);
   }
 }
 
@@ -1036,6 +1043,7 @@ a.current-link {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+  margin-top: 150px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
@@ -1560,8 +1568,13 @@ a.current-link {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   color: var(--secondary-color);
+}
+@media screen and (max-width: 480px) {
+  .peculiarities__title {
+    text-align: center;
+  }
 }
 .peculiarities__text {
   margin-top: 10px;
@@ -1698,7 +1711,7 @@ a.current-link {
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: #ffffff;
-  background-color: rgba(33, 150, 243, 0.9);
+  background-color: rgba(13, 164, 7, 0.8);
   -webkit-transition: -webkit-transform var(--main-transition);
   transition: -webkit-transform var(--main-transition);
   transition: transform var(--main-transition);

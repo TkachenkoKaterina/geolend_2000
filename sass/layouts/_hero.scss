@@ -21,7 +21,8 @@
 	background-position: center;
 	background-size: cover;
 
-	background-image: linear-gradient(to right, #2f303a66, #2f303a66), url(../images/main/Hero-sm.jpg);
+	background-image: linear-gradient(to right, #2f303a66, #2f303a66),
+		url(../images/hero/david-henrichs-72AYEEBJpz4-unsplash_sm.jpg);
 
 	// ===================== Респонсивные фоновые изображения =====================
 	// ============================================================================
@@ -31,30 +32,35 @@
 		(-webkit-min-device-pixel-ratio: 2),
 		(min-resolution: 192dpi),
 		(min-resolution: 2dppx) {
-		background-image: linear-gradient(to right, #2f303a66, #2f303a66), url(../images/main/Hero-sm@2x.jpg);
+		background-image: linear-gradient(to right, #2f303a66, #2f303a66),
+			url(../images/hero/david-henrichs-72AYEEBJpz4-unsplash_sm@2.jpg);
 	}
 
 	// ======= Для ретина экранов планшет версия =======
 	@media screen and (min-width: 768px) {
-		background-image: linear-gradient(to right, #2f303a66, #2f303a66), url(../images/main/Hero-md.jpg);
+		background-image: linear-gradient(to right, #2f303a66, #2f303a66),
+			url(../images/hero/david-henrichs-72AYEEBJpz4-unsplash_md.jpg);
 
 		@media (min-device-pixel-ratio: 2),
 			(-webkit-min-device-pixel-ratio: 2),
 			(min-resolution: 192dpi),
 			(min-resolution: 2dppx) {
-			background-image: linear-gradient(to right, #2f303a66, #2f303a66), url(../images/main/Hero-md@2x.jpg);
+			background-image: linear-gradient(to right, #2f303a66, #2f303a66),
+				url(../images/hero/david-henrichs-72AYEEBJpz4-unsplash_md@2.jpg);
 		}
 	}
 
 	// ======= Для ретина экранов ПК версия =======
 	@media screen and (min-width: 1200px) {
-		background-image: linear-gradient(to right, #2f303a66, #2f303a66), url(../images/main/Hero-lg.jpg);
+		background-image: linear-gradient(to right, #2f303a66, #2f303a66),
+			url(../images/hero/david-henrichs-72AYEEBJpz4-unsplash_lg.jpg);
 
 		@media (min-device-pixel-ratio: 2),
 			(-webkit-min-device-pixel-ratio: 2),
 			(min-resolution: 192dpi),
 			(min-resolution: 2dppx) {
-			background-image: linear-gradient(to right, #2f303a66, #2f303a66), url(../images/main/Hero-lg@2x.jpg);
+			background-image: linear-gradient(to right, #2f303a66, #2f303a66),
+				url(../images/hero/david-henrichs-72AYEEBJpz4-unsplash_lg@2.jpg);
 		}
 	}
 }
@@ -63,6 +69,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 30px;
+	margin-top: 150px;
 
 	font-weight: 900;
 	font-size: 26px;

@@ -4,7 +4,7 @@
 	position: relative;
 }
 
-.mobile_logo {
+.mobile__logo {
 	padding: 16px 0;
 }
 
@@ -66,12 +66,12 @@
 
 	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		flex-direction: column;
-		margin-left: 84px;
+		margin-left: 94px;
 		gap: 10px;
 	}
 
 	@media screen and (min-width: 1200px) {
-		margin: 0 0 0 305px;
+		margin: 0 0 0 206px;
 		gap: 30px;
 	}
 }
@@ -84,11 +84,11 @@
 	}
 
 	@media screen and (min-width: 768px) {
-		margin: 0 0 0 88px;
+		margin: 0 0 0 42px;
 	}
 
 	@media screen and (min-width: 1200px) {
-		margin: 0 0 0 93px;
+		margin: 0 0 0 120px;
 	}
 }
 
@@ -96,7 +96,11 @@
 	display: flex;
 
 	& .list {
-		margin-right: 50px;
+		margin-right: 40px;
+
+		@media screen and (min-width: 1200px) {
+			margin-right: 50px;
+		}
 	}
 
 	& .list:last-child {
