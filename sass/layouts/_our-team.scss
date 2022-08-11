@@ -107,8 +107,19 @@
 	// }
 }
 
-// .btn__offices {
-// 	position: absolute;
-// 	left: 50%;
-// 	top: 50%;
-// }
+.btn__offices {
+	position: absolute;
+	left: 70px;
+	top: 150px;
+	display: none;
+
+	transition: scale 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+	scale: 1;
+}
+
+.offices__list:hover {
+	.btn__offices {
+		display: block;
+		scale: 1.3;
+	}
+}
