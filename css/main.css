@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
 :root {
   --dominant-font: "Roboto";
   --secondary-font: "Raleway";
@@ -60,6 +61,35 @@ img {
 body {
   font-family: var(--dominant-font), sans-serif;
   font-size: 14px;
+}
+
+/* Cool font from Google Fonts! */
+#morf {
+  /* Center the text in the viewport. */
+  position: absolute;
+  margin: auto;
+  width: 100vw;
+  height: 80pt;
+  top: 10%;
+  left: -51%;
+  /* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
+  -webkit-filter: url(#threshold) blur(0.6px);
+          filter: url(#threshold) blur(0.6px);
+}
+
+/* Your average text styling */
+#text1,
+#text2 {
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-size: 50pt;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 /* ============= Btn =============*/
@@ -985,6 +1015,7 @@ a.current-link {
 }
 
 .section-hero {
+  position: relative;
   padding-top: 118px;
   padding-bottom: 118px;
 }

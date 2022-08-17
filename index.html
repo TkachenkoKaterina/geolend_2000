@@ -81,8 +81,8 @@
 							<a href="" class="mobile-menu__social-link list">LinkedIn</a></li>
 					</ul>
 				</div>
-				<!-- End Mobile menu =======  -->
 
+				<!-- End Mobile menu =======  -->
 				<nav class="nav-header">
 					<ul class="nav-flex">
 						<li class="header-list list"><a class="nav-link selection current-link" href="./index.html">Головна</a></li>
@@ -115,6 +115,29 @@
 		<main>
 			<!-- Секция герой -->
 			<section class="section-hero hero-bg">
+				<!-- Будуємо країну разом -->
+				
+					<!-- The two texts -->
+					<div id="morf">
+						<span id="text1"></span>
+						<span id="text2"></span>
+					</div>
+
+					<!-- The SVG filter used to create the merging effect -->
+					<svg id="filters">
+						<defs>
+							<filter id="threshold">
+								<!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
+								<feColorMatrix in="SourceGraphic"
+										type="matrix"
+										values="1 0 0 0 0
+														0 1 0 0 0
+														0 0 1 0 0
+														0 0 0 255 -140" />
+							</filter>
+						</defs>
+					</svg>
+				
 				<h1 class="hero-title">Ефективні рішення для вашої земельної ділянки</h1>
 				<button class="btn" type="button" data-modal-open>Замовити послугу</button>
 			</section>
@@ -196,7 +219,7 @@
 							</a>
 							<h3 class="peculiarities__title">Технологічність</h3>
 							<p class="peculiarities__text">
-								Інноваційне програмне забезпечення та оснащеність новітніми технічними засобами.
+								Інноваційне програмне забезпечення та оснащеність новітніми технічними засобами
 							</p>
 						</li>
 						<li class="peculiarities__list list">
@@ -207,7 +230,7 @@
 							</a>
 							<h3 class="peculiarities__title">Потужний потенціал</h3>
 							<p class="peculiarities__text">
-								Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+								Висококваліфікаційна експертиза та індівідульній підхід. Коробочні рішення під ключ
 							</p>
 						</li>
 						<li class="peculiarities__list list">
@@ -218,7 +241,7 @@
 							</a>
 							<h3 class="peculiarities__title">Співпраця на Державному рівні</h3>
 							<p class="peculiarities__text">
-								Равным образом консультация с широким активом в значительной степени обуславливает.
+								Відповідальність
 							</p>
 						</li>
 						<li class="peculiarities__list list">
@@ -229,7 +252,7 @@
 							</a>
 							<h3 class="peculiarities__title">Надійні партнерські відносини</h3>
 							<p class="peculiarities__text">
-								Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+								Значимость этих проблем настолько очевидна, что реализация плановых заданий
 							</p>
 						</li>
 					</ul>
@@ -636,5 +659,6 @@
 		</footer>
 		<script src="./js/modal.js"></script>
 		<script src="./js/menu.js"></script>
+		<script src="./js/morftext.js"></script>
 	</body>
 </html>
