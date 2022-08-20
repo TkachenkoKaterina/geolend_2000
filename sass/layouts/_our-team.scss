@@ -53,6 +53,14 @@
 			font-size: 14px;
 			line-height: 1.14;
 		}
+
+		@media screen and (max-width: 479px) {
+			left: 10px;
+			top: 73px;
+			width: 274px;
+			font-size: 14px;
+			line-height: 1.14;
+		}
 	}
 
 	&__time-work {
@@ -84,6 +92,14 @@
 			line-height: 1.14;
 			width: 248px;
 		}
+
+		@media screen and (max-width: 479px) {
+			left: 50px;
+			top: 146px;
+			width: 190px;
+			font-size: 16px;
+			line-height: 1.19;
+		}
 	}
 
 	&__position-name {
@@ -98,6 +114,11 @@
 		color: var(--dominant-color);
 
 		@media screen and (min-width: 1200px) {
+			font-size: 14px;
+			line-height: 1.14;
+		}
+
+		@media screen and (max-width: 479px) {
 			font-size: 14px;
 			line-height: 1.14;
 		}
@@ -121,6 +142,11 @@
 	@media screen and (min-width: 1200px) {
 		font-size: 12px;
 		line-height: 1.17;
+	}
+
+	@media screen and (max-width: 479px) {
+		flex-direction: column;
+		gap: 14px;
 	}
 }
 
@@ -186,11 +212,16 @@
 		left: 27px;
 		top: 166px;
 	}
+
+	@media screen and (max-width: 479px) {
+		left: 35px;
+		top: 215px;
+	}
 }
 
 .offices__list:hover {
 	.btn__offices {
 		display: block;
-		scale: 1.2;
+		// scale: 1.2;
 	}
 }

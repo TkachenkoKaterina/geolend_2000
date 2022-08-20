@@ -10,6 +10,10 @@
 
 	&__list {
 		position: relative;
+
+		@media screen and (max-width: 768px) {
+			max-width: 450px;
+		}
 	}
 
 	&__box {
@@ -22,6 +26,11 @@
 		align-items: center;
 
 		background-color: rgba(47, 48, 58, 0.8);
+
+		@media screen and (max-width: 768px) {
+			max-width: 100%;
+			// max-height: 85px;
+		}
 	}
 
 	&__text {

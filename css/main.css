@@ -494,7 +494,7 @@ a.current-link {
 
 .mobile-menu__contact-link--blue {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 30px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--accent-color);
@@ -505,7 +505,7 @@ a.current-link {
 
 .mobile-menu__contact-link {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--dominant-color);
@@ -1510,6 +1510,15 @@ a.current-link {
     line-height: 1.14;
   }
 }
+@media screen and (max-width: 479px) {
+  .offices__map {
+    left: 10px;
+    top: 73px;
+    width: 274px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
 .offices__time-work {
   position: absolute;
   width: 340px;
@@ -1539,6 +1548,15 @@ a.current-link {
     width: 248px;
   }
 }
+@media screen and (max-width: 479px) {
+  .offices__time-work {
+    left: 50px;
+    top: 146px;
+    width: 190px;
+    font-size: 16px;
+    line-height: 1.19;
+  }
+}
 .offices__position-name {
   font-size: 16px;
   font-weight: 700;
@@ -1550,6 +1568,12 @@ a.current-link {
   color: var(--dominant-color);
 }
 @media screen and (min-width: 1200px) {
+  .offices__position-name {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+@media screen and (max-width: 479px) {
   .offices__position-name {
     font-size: 14px;
     line-height: 1.14;
@@ -1579,6 +1603,15 @@ a.current-link {
   .offices__contact-flex {
     font-size: 12px;
     line-height: 1.17;
+  }
+}
+@media screen and (max-width: 479px) {
+  .offices__contact-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 14px;
   }
 }
 
@@ -1645,10 +1678,15 @@ a.current-link {
     top: 166px;
   }
 }
+@media screen and (max-width: 479px) {
+  .btn__offices {
+    left: 35px;
+    top: 215px;
+  }
+}
 
 .offices__list:hover .btn__offices {
   display: block;
-  scale: 1.2;
 }
 
 /* ============= Peculiarities Section =============*/
@@ -1892,6 +1930,11 @@ a.current-link {
 .work__list {
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .work__list {
+    max-width: 450px;
+  }
+}
 .work__box {
   position: absolute;
   bottom: 0;
@@ -1907,6 +1950,11 @@ a.current-link {
       -ms-flex-align: center;
           align-items: center;
   background-color: rgba(47, 48, 58, 0.8);
+}
+@media screen and (max-width: 768px) {
+  .work__box {
+    max-width: 100%;
+  }
 }
 .work__text {
   text-transform: uppercase;
