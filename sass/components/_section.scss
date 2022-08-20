@@ -5,7 +5,7 @@
 		padding: 94px 0;
 	}
 
-	outline: 1px solid blue;
+	// outline: 1px solid blue;
 }
 
 .section__title {
@@ -33,7 +33,4 @@
 
 .section-work {
 	padding-bottom: 94px;
-	@media screen and (max-width: 1199px) {
-		display: none;
-	}
 }

@@ -1,8 +1,11 @@
 .work {
 	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: center;
 
 	&__list:not(:first-child) {
-		margin-left: 30px;
+		// margin-left: 30px;
 	}
 
 	&__list {

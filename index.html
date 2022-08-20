@@ -51,22 +51,22 @@
 							<a href="./index.html" class="mobile-menu__nav-link list current-link">Головна</a>
 						</li>
 						<li class="mobile-menu__nav-item">
-							<a href="./portfolio.html" class="mobile-menu__nav-link list">Послуги</a>
+							<a href="#work" class="mobile-menu__nav-link list">Послуги</a>
 						</li>
 						<li class="mobile-menu__nav-item">
-							<a href="" class="mobile-menu__nav-link list">Портфоліо</a>
+							<a href="#offices" class="mobile-menu__nav-link list">Контакти</a>
 						</li>
 						<li class="mobile-menu__nav-item">
-							<a href="" class="mobile-menu__nav-link list">FAQ</a>
+							<a href="https://land.gov.ua/faq/" class="mobile-menu__nav-link list" target="_blank">FAQ</a>
 						</li>
 					</ul>
 				
 					<ul class="mobile-menu__contact-list list">
 						<li class="mobile-menu__contact-item">
-							<a href="" class="mobile-menu__contact-link--blue list">+38 096 111 11 11</a>
+							<a href="tel:+380975798707" class="mobile-menu__contact-link--blue list">+38 097 579 87 07</a>
 						</li>
 						<li class="mobile-menu__contact-item">
-							<a href="" class="mobile-menu__contact-link list">geolend2000@gmail.com</a>
+							<a href="mailto:geolenddndz2@gmail.com" class="mobile-menu__contact-link list">geolenddndz2@gmail.com</a>
 						</li>
 					</ul>
 				
@@ -81,29 +81,30 @@
 							<a href="" class="mobile-menu__social-link list">LinkedIn</a></li>
 					</ul>
 				</div>
-
 				<!-- End Mobile menu =======  -->
+
+				<!-- Nav Header =======  -->
 				<nav class="nav-header">
 					<ul class="nav-flex">
 						<li class="header-list list"><a class="nav-link selection current-link" href="./index.html">Головна</a></li>
-						<li class="header-list list"><a class="nav-link selection" href="./portfolio.html">Послуги</a></li>
-						<li class="header-list list"><a class="nav-link selection" href="">Портфоліо</a></li>
-						<li class="header-list list"><a class="nav-link selection" href="">FAQ</a></li>
+						<li class="header-list list"><a class="nav-link selection" href="#work">Послуги</a></li>
+						<li class="header-list list"><a class="nav-link selection" href="#offices">Контакти</a></li>
+						<li class="header-list list"><a class="nav-link selection" href="https://land.gov.ua/faq/" target="_blank">FAQ</a></li>
 					</ul>
 				</nav>
 
 				<div>
 					<ul class="contact-flex">
 						<li class="header-contact list">
-							<a class="contact-link selection" href="mailto:geolend2000@gmail.com"><svg class="icon icon-marg" width="16" height="12">
+							<a class="contact-link selection" href="mailto:geolenddndz2@gmail.com"><svg class="icon icon-marg" width="16" height="12">
 									<use href="./images/icons.svg#icon-envelope"></use>
-								</svg>geolend2000@gmail.com
+								</svg>geolenddndz2@gmail.com
 							</a>
 						</li>
 						<li class="header-contact list">
-							<a class="contact-link selection" href="tel:+380961111111"><svg class="icon icon-marg" width="10" height="16">
+							<a class="contact-link selection" href="tel:+380975798707"><svg class="icon icon-marg" width="10" height="16">
 									<use href="./images/icons.svg#icon-mobile"></use>
-								</svg>+38 096 111 11 11</a>
+								</svg>+38 097 579 87 07</a>
 						</li>
 					</ul>
 				</div>
@@ -230,7 +231,7 @@
 							</a>
 							<h3 class="peculiarities__title">Потужний потенціал</h3>
 							<p class="peculiarities__text">
-								Висококваліфікаційна експертиза та індівідульній підхід. Коробочні рішення під ключ
+								Командна робота для успішного досягнення цілей
 							</p>
 						</li>
 						<li class="peculiarities__list list">
@@ -241,7 +242,7 @@
 							</a>
 							<h3 class="peculiarities__title">Співпраця на Державному рівні</h3>
 							<p class="peculiarities__text">
-								Відповідальність
+								Ефективне співробітництво з органами влади та ДП в реалізації державних та регіональних програм
 							</p>
 						</li>
 						<li class="peculiarities__list list">
@@ -252,7 +253,7 @@
 							</a>
 							<h3 class="peculiarities__title">Надійні партнерські відносини</h3>
 							<p class="peculiarities__text">
-								Значимость этих проблем настолько очевидна, что реализация плановых заданий
+								Відповідальність за результат та гарантія конфіденційності
 							</p>
 						</li>
 					</ul>
@@ -260,9 +261,9 @@
 			</section>
 
 			<!-- Секция Чем мы занимаемся -->
-			<section class="section-work">
+			<section class="section-work" id="work">
 				<div class="container">
-					<h2 class="section__title">Основні напрямки</h2>
+					<h2 class="section__title">Послуги</h2>
 					<ul class="work">
 						<li class="work__list list">
 							<picture>								
@@ -311,12 +312,12 @@
 			</section>
 
 			<!-- Секция наші офіси -->
-			<section class="section section-bg">
+			<section class="section section-bg" id="offices">
 				<div class="container">
 					<h2 class="section__title">Наші офіси</h2>
 					<ul class="offices">
+						<!-- ======= Офіс ДНДЗ ======= -->
 						<li class="offices__list offices__list--dndz list">
-							<button class="btn btn__offices" type="button" data-modal-open>Замовити послугу</button>
 							<picture>
 								<!-- <source
 									media="(min-width: 1200px)"
@@ -356,31 +357,29 @@
 							</picture>
 							
 							<address class="offices__address">
-								<a class="offices__map" href="https://goo.gl/maps/JaR8wPoVLPzRB4Zz6" target="_blank" rel="noopener noreferrer">м. Кам'янське<br>площа Соборна, 1-а</a>
+								<a class="offices__map" href="https://www.google.com/maps/place/48%C2%B031'32.3%22N+34%C2%B036'53.0%22E/@48.525645,34.6141788,185m/data=!3m1!1e3!4m5!3m4!1s0x0:0x2a4541e649abff9e!8m2!3d48.525645!4d34.614726" target="_blank" rel="noopener noreferrer">м. Кам'янське<br>вулиця Соборна 12, корпус 2, офіс 20</a>
 							</address>
+							<p class="offices__time-work">Часи роботи: Пн-Пт 10.00-15.00</p>
+							<button class="btn btn__offices" type="button" data-modal-open>Замовити послугу</button>
 
-							<p class="offices__time-work">Часи роботи: Пн-Пт 8.00-17.00</p>
-							<P class="offices__position-name">Головний менеджер:<br>Марія Олександрівна</P>
-
-							<div>
-								<ul class="offices__contact-flex">
-									<li class="offices__header-contact list">
-										<a class="offices__contact-link selection" href="mailto:geolend2000@gmail.com"><svg class="icon icon-marg" width="16" height="12">
-												<use href="./images/icons.svg#icon-envelope"></use>
-											</svg>geolend2000@gmail.com
-										</a>
-									</li>
-									<li class="offices__header-contact list">
-										<a class="offices__contact-link selection" href="tel:+380961111111"><svg class="icon icon-marg" width="10" height="16">
-												<use href="./images/icons.svg#icon-mobile"></use>
-											</svg>+38 096 111 11 11</a>
-									</li>
-								</ul>
-							</div>
+							<P class="offices__position-name">Офіс-менеджер:<br>Марія Олександрівна</P>
+							<ul class="offices__contact-flex">
+								<li class="offices__header-contact list">
+									<a class="offices__contact-link selection" href="mailto:geolenddndz2@gmail.com"><svg class="icon icon-marg" width="16" height="12">
+											<use href="./images/icons.svg#icon-envelope"></use>
+										</svg>geolenddndz2@gmail.com
+									</a>
+								</li>
+								<li class="offices__header-contact list">
+									<a class="offices__contact-link selection" href="tel:+380975798707"><svg class="icon icon-marg" width="10" height="16">
+											<use href="./images/icons.svg#icon-mobile"></use>
+										</svg>+38 097 579 87 07</a>
+								</li>
+							</ul>
 						</li>
 
-						<li class="offices__list offices__list--dndz list">
-							<button class="btn btn__offices" type="button" data-modal-open>Замовити послугу</button>
+						<!-- ======= Офіс Дніпро ======= -->
+						<li class="offices__list offices__list--dp list">
 							<picture>
 																
 								<source
@@ -406,30 +405,29 @@
 							</picture>
 							
 							<address class="offices__address">
-								<a class="offices__map" href="https://goo.gl/maps/JaR8wPoVLPzRB4Zz6" target="_blank" rel="noopener noreferrer">м. Дніпро<br>Січеславька Набережна, 7</a>
+								<a class="offices__map" href="https://www.google.com/maps/place/48%C2%B028'36.3%22N+35%C2%B002'04.3%22E/@48.476755,35.0323273,741m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x4abb2ff4a37a9cf!8m2!3d48.476755!4d35.034516" target="_blank" rel="noopener noreferrer">м. Дніпро<br>вул. Січеславська набережна, 7</a>
 							</address>
-
-							<p class="offices__time-work">Часи роботи: Пн-Пт 8.00-17.00</p>
-							<P class="offices__position-name">Головний менеджер:<br>Олена Сергіївна</P>
-
-							<div>
-								<ul class="offices__contact-flex">
-									<li class="offices__header-contact list">
-										<a class="offices__contact-link selection" href="mailto:geolend2000@gmail.com"><svg class="icon icon-marg" width="16" height="12">
-												<use href="./images/icons.svg#icon-envelope"></use>
-											</svg>geolend2000@gmail.com
-										</a>
-									</li>
-									<li class="offices__header-contact list">
-										<a class="offices__contact-link selection" href="tel:+380961111111"><svg class="icon icon-marg" width="10" height="16">
-												<use href="./images/icons.svg#icon-mobile"></use>
-											</svg>+38 096 111 11 11</a>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li class="offices__list list">
+							<p class="offices__time-work">Часи роботи: Пн, Чт 8.00-17.00</p>
 							<button class="btn btn__offices" type="button" data-modal-open>Замовити послугу</button>
+
+							<P class="offices__position-name">Офіс-менеджер:<br>Олена Сергіївна</P>
+							<ul class="offices__contact-flex">
+								<li class="offices__header-contact list">
+									<a class="offices__contact-link selection" href="mailto:geodnepr2000@gmail.com"><svg class="icon icon-marg" width="16" height="12">
+											<use href="./images/icons.svg#icon-envelope"></use>
+										</svg>geodnepr2000@gmail.com
+									</a>
+								</li>
+								<li class="offices__header-contact list">
+									<a class="offices__contact-link selection" href="tel:+380973775949"><svg class="icon icon-marg" width="10" height="16">
+											<use href="./images/icons.svg#icon-mobile"></use>
+										</svg>+38 097 377 59 49</a>
+								</li>
+							</ul>
+						</li>
+						
+						<!-- ======= Офіс Кринички ======= -->
+						<li class="offices__list list">
 							<picture>								
 								<source
 									media="(min-width: 1200px)"
@@ -454,30 +452,29 @@
 							</picture>
 							
 							<address class="offices__address">
-								<a class="offices__map" href="https://goo.gl/maps/JaR8wPoVLPzRB4Zz6" target="_blank" rel="noopener noreferrer">смт. Кринички<br>площа Соборна, 1-а</a>
+								<a class="offices__map" href="https://www.google.com/maps/place/48%C2%B022'06.7%22N+34%C2%B027'32.6%22E/@48.368372,34.4587271,186m/data=!3m1!1e3!4m5!3m4!1s0x0:0xfa0cf32d0529f1b8!8m2!3d48.368523!4d34.459053" target="_blank" rel="noopener noreferrer">смт. Кринички<br>вул. Центральна 12, офіс 1</a>
 							</address>
-
-							<p class="offices__time-work">Часи роботи: Пн-Пт 8.00-17.00</p>
-							<P class="offices__position-name">Головний менеджер:<br>Олена Миколаївна</P>
-
-							<div>
-								<ul class="offices__contact-flex">
-									<li class="offices__header-contact list">
-										<a class="offices__contact-link selection" href="mailto:geolend2000@gmail.com"><svg class="icon icon-marg" width="16" height="12">
-												<use href="./images/icons.svg#icon-envelope"></use>
-											</svg>geolend2000@gmail.com
-										</a>
-									</li>
-									<li class="offices__header-contact list">
-										<a class="offices__contact-link selection" href="tel:+380961111111"><svg class="icon icon-marg" width="10" height="16">
-												<use href="./images/icons.svg#icon-mobile"></use>
-											</svg>+38 096 111 11 11</a>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li class="offices__list list">
+							<p class="offices__time-work">Часи роботи: Пн-Пт 9.00-13.00</p>
 							<button class="btn btn__offices" type="button" data-modal-open>Замовити послугу</button>
+
+							<P class="offices__position-name">Офіс-менеджер:<br>Олена Володимирівна</P>
+							<ul class="offices__contact-flex">
+								<li class="offices__header-contact list">
+									<a class="offices__contact-link selection" href="mailto:krinichki@i.ua"><svg class="icon icon-marg" width="16" height="12">
+											<use href="./images/icons.svg#icon-envelope"></use>
+										</svg>krinichki@i.ua
+									</a>
+								</li>
+								<li class="offices__header-contact list">
+									<a class="offices__contact-link selection" href="tel:+380976183363"><svg class="icon icon-marg" width="10" height="16">
+											<use href="./images/icons.svg#icon-mobile"></use>
+										</svg>+38 097 618 33 63</a>
+								</li>
+							</ul>
+						</li>
+
+						<!-- ======= Офіс Петриківка ======= -->
+						<li class="offices__list list">
 							<picture>								
 								<source
 									media="(min-width: 1200px)"
@@ -502,27 +499,25 @@
 							</picture>
 							
 							<address class="offices__address">
-								<a class="offices__map" href="https://goo.gl/maps/JaR8wPoVLPzRB4Zz6" target="_blank" rel="noopener noreferrer">смт. Петриківка<br>площа Соборна, 1-а</a>
+								<a class="offices__map" href="https://www.google.com/maps/place/%D0%BF%D1%80%D0%BE%D1%81%D0%BF.+%D0%9F%D0%B5%D1%82%D1%80%D0%B0+%D0%9A%D0%B0%D0%BB%D0%BD%D0%B8%D1%88%D0%B5%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE,+73,+%D0%9F%D0%B5%D1%82%D1%80%D0%B8%D0%BA%D1%96%D0%B2%D0%BA%D0%B0,+%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE%D0%BF%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+51800/@48.7155071,34.6226625,738m/data=!3m2!1e3!4b1!4m5!3m4!1s0x40d97c1ff10c8425:0xdd926bc9647d157!8m2!3d48.7155036!4d34.6248512" target="_blank" rel="noopener noreferrer">смт.Петриківка<br>просп. Петра Калнишевського, 73-Б</a>
 							</address>
+							<p class="offices__time-work">Часи роботи: Пн, Ср, Пт 9.00-14.00</p>
+							<button class="btn btn__offices" type="button" data-modal-open>Замовити послугу</button>
 
-							<p class="offices__time-work">Часи роботи: Пн-Пт 8.00-17.00</p>
-							<P class="offices__position-name">Головний менеджер:<br>Юлія Володимирівна</P>
-
-							<div>
-								<ul class="offices__contact-flex">
-									<li class="offices__header-contact list">
-										<a class="offices__contact-link selection" href="mailto:geolend2000@gmail.com"><svg class="icon icon-marg" width="16" height="12">
-												<use href="./images/icons.svg#icon-envelope"></use>
-											</svg>geolend2000@gmail.com
-										</a>
-									</li>
-									<li class="offices__header-contact list">
-										<a class="offices__contact-link selection" href="tel:+380961111111"><svg class="icon icon-marg" width="10" height="16">
-												<use href="./images/icons.svg#icon-mobile"></use>
-											</svg>+38 096 111 11 11</a>
-									</li>
-								</ul>
-							</div>
+							<P class="offices__position-name">Офіс-менеджер:<br>Тетяна Віталіївна</P>
+							<ul class="offices__contact-flex">
+								<li class="offices__header-contact list">
+									<a class="offices__contact-link selection" href="mailto:geolend2001petrukivka@gmail.com"><svg class="icon icon-marg" width="16" height="12">
+											<use href="./images/icons.svg#icon-envelope"></use>
+										</svg>geolend2001petrukivka@gmail.com
+									</a>
+								</li>
+								<li class="offices__header-contact list">
+									<a class="offices__contact-link selection" href="tel:+380988979199"><svg class="icon icon-marg" width="10" height="16">
+											<use href="./images/icons.svg#icon-mobile"></use>
+										</svg>+38 098 897 91 99</a>
+								</li>
+							</ul>
 						</li>
 					</ul>
 				</div>
@@ -585,20 +580,20 @@
 			<div class="container container-footer ">
 				<div class="container-footer1">
 					<a class="logo-footer logo-first" href="./index.html">
-					<span></span>Web<span class="logo-second-white">Studio</span></span>
+					<span></span>Geo<span class="logo-second-white">Lend</span></span>
 					</a>
 					<address class="footer-address">
-					<a class="address" href="https://goo.gl/maps/JaR8wPoVLPzRB4Zz6" target="_blank" rel="noopener noreferrer">
-						г. Киев, пр-т Леси Украинки, 26
+					<a class="address" href="https://www.google.com/maps/place/48%C2%B028'36.3%22N+35%C2%B002'04.3%22E/@48.476755,35.0323273,741m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x4abb2ff4a37a9cf!8m2!3d48.476755!4d35.034516" target="_blank" rel="noopener noreferrer">
+						м. Дніпро, вул. Січеславська набережна, 7
 					</a>
 					</address>
 					<div>
 						<ul class="footer-list">
 							<li class="list">
-								<a class="footer-contact-link selection" href="mailto:geolend2000@gmail.com">geolend2000@gmail.com</a>
+								<a class="footer-contact-link selection" href="mailto:geolenddndz2@gmail.com">geolenddndz2@gmail.com</a>
 							</li>
 							<li class="list">
-								<a class="footer-contact-link selection" href="tel:+380961111111">+38 096 111 11 11</a>
+								<a class="footer-contact-link selection" href="tel:+380975798707">+38 097 579 87 07</a>
 							</li>
 						</ul>
 					</div>

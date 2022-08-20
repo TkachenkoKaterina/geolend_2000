@@ -168,7 +168,6 @@ body {
 
 .section {
   padding: 60px 0;
-  outline: 1px solid blue;
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -202,18 +201,12 @@ body {
 .section-work {
   padding-bottom: 94px;
 }
-@media screen and (max-width: 1199px) {
-  .section-work {
-    display: none;
-  }
-}
 
 .container {
   width: 100%;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid tomato;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -975,7 +968,7 @@ a.current-link {
 }
 @media screen and (min-width: 1200px) {
   .contact-flex {
-    margin: 0 0 0 206px;
+    margin: 0 0 0 198px;
     gap: 30px;
   }
 }
@@ -1484,56 +1477,109 @@ a.current-link {
         flex-wrap: wrap;
   }
 }
-.offices__address {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
 .offices__map {
+  position: absolute;
+  left: 33px;
+  top: 109px;
+  width: 384px;
+  text-align: center;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+  font-size: 20px;
+  line-height: 1.15;
   letter-spacing: 0.03em;
-  margin-top: 30px;
-  text-align: center;
   text-decoration: none;
   color: #212121;
 }
+@media screen and (min-width: 768px) {
+  .offices__map {
+    left: 8px;
+    top: 82px;
+    width: 339px;
+    font-size: 18px;
+    line-height: 1.17;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .offices__map {
+    left: 3px;
+    top: 52px;
+    width: 264px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
 .offices__time-work {
-  font-size: 16px;
-  line-height: 1.19;
+  position: absolute;
+  width: 340px;
+  left: 70px;
+  top: 213px;
+  font-size: 20px;
+  line-height: 1.15;
+  font-weight: 400;
   letter-spacing: 0.03em;
-  margin-top: 10px;
   text-align: center;
   color: var(--dominant-color);
 }
+@media screen and (min-width: 768px) {
+  .offices__time-work {
+    left: 7px;
+    top: 177px;
+    font-size: 18px;
+    line-height: 1.17;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .offices__time-work {
+    left: 11px;
+    top: 119px;
+    font-size: 14px;
+    line-height: 1.14;
+    width: 248px;
+  }
+}
 .offices__position-name {
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin-top: 10px;
+  margin-top: 17px;
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   color: var(--dominant-color);
+}
+@media screen and (min-width: 1200px) {
+  .offices__position-name {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .offices__contact-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 10px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+@media screen and (min-width: 768px) {
+  .offices__contact-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 14px;
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 500;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .offices__contact-flex {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .offices__contact-link {
@@ -1548,7 +1594,7 @@ a.current-link {
           align-items: center;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.17;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--dominant-color);
@@ -1566,35 +1612,43 @@ a.current-link {
 @media screen and (min-width: 480px) {
   .offices__list {
     width: 450px;
-    padding-bottom: 24px;
   }
 }
 @media screen and (min-width: 768px) {
   .offices__list {
     width: 354px;
-    padding-bottom: 24px;
   }
 }
 @media screen and (min-width: 1200px) {
   .offices__list {
     width: 270px;
-    padding-bottom: 30px;
   }
 }
 
 .btn__offices {
   position: absolute;
-  left: 70px;
-  top: 150px;
-  display: none;
+  left: 125px;
+  top: 301px;
   -webkit-transition: scale 1000ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: scale 1000ms cubic-bezier(0.4, 0, 0.2, 1);
   scale: 1;
 }
+@media screen and (min-width: 768px) {
+  .btn__offices {
+    left: 77px;
+    top: 258px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn__offices {
+    left: 27px;
+    top: 166px;
+  }
+}
 
 .offices__list:hover .btn__offices {
   display: block;
-  scale: 1.3;
+  scale: 1.2;
 }
 
 /* ============= Peculiarities Section =============*/
@@ -1828,9 +1882,12 @@ a.current-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-.work__list:not(:first-child) {
-  margin-left: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .work__list {
   position: relative;
