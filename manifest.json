@@ -1,0 +1,9 @@
+{
+	"name": "GeoLend 2000",
+	"short_name": "GeoLend",
+	"start_url": "./index.html",
+	"display": "standalone",
+	"background-color": "#FFFFFF",
+	"theme_color": "#0da407",
+	"orientation": "portrait-primery"
+}
