@@ -3,7 +3,14 @@
 	"short_name": "GeoLend",
 	"start_url": "./index.html",
 	"display": "standalone",
-	"background-color": "#FFFFFF",
+	"background-color": "#F5F4FA",
 	"theme_color": "#0da407",
-	"orientation": "portrait-primery"
+	"orientation": "portrait-primery",
+	"icons": [
+		{
+			"src": "./images/svg/favicon16x16.svg",
+			"type": "image/svg",
+			"sizes": "16x16"
+		}
+	]
 }
